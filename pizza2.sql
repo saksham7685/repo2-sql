@@ -100,13 +100,10 @@ FROM pizza_data
 GROUP BY pizza_category
 ORDER BY Total_Orders ASC LIMIT 5;
 
-
-
-
-
-
-
-
+SELECT pizza_category, COUNT(DISTINCT order_id) AS Total_Orders
+FROM pizza_data
+GROUP BY pizza_category
+ORDER BY Total_Orders ASC LIMIT 5;
  
 
 
